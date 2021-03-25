@@ -1,0 +1,79 @@
+@charset "UTF-8";
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+/* body {
+    width: 1500px;
+} */
+
+#headerWrap {
+    text-align: center;
+    height: 170px;
+    margin-top: 50px;
+}
+
+#myPage {
+    padding: 0 0 0 40%;
+}
+
+#myPage>h1 {
+    font-size: 30px;
+    margin-bottom: 50px;
+    color: rgb(160, 95, 133);
+}
+
+#myPage h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: rgb(0, 0, 0);
+}
+
+input[type=text] {
+    margin: 0 0 15px 0;
+    width: 300px;
+    height: 30px;
+}
+input[type=password] {
+    margin: 0 0 15px 0;
+    width: 300px;
+    height: 30px;
+}
+
+#myPage label,
+#userId {
+    display: block;
+    letter-spacing: 1px;
+    font-size: 13px;
+    font-weight: bold;
+
+}
+
+
+.btn>button {
+    width: 110px;
+    background-color: rgb(160, 95, 133);
+    border: none;
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+    font-weight: bold;
+    display: inline-block;
+    font-size: 15px;
+    margin: 20px;
+    cursor: pointer;
+}

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="mem">
+  
+	<!-- 회원가입 -->
+  <insert id="joinMember" parameterType="member">
+  <![CDATA[
+		INSERT INTO member (memCode, memName, memId, memPassword) 
+		VALUES(NULL, #{memName},#{memId}, #{memPassword});
+    ]]>
+  </insert>
+  
+  	<!-- 아이디중복체크 -->
+	<select id="idCk" resultType="int">
+	<![CDATA[
+	SELECT COUNT(*) FROM member WHERE memId=#{memId}
+	]]>
+	</select>
+	
+	<!-- 로그인 -->
+	<select id="login" resultType="member">
+	<![CDATA[
+	SELECT memCode, memName, memId, memPassword 
+	FROM member 
+	WHERE memId=#{memId} AND memPassword=#{memPassword}
+	]]>
+	</select>
+	
+	<!-- 회원 정보 조회 -->
+	<select id="viewMember" resultType="member">
+	<![CDATA[
+	SELECT * FROM member 
+	WHERE memId=#{memId} AND memPassword=#{memPassword}
+	]]>
+	</select>
+
+	<!-- 비밀번호 수정 -->
+	<update id="modifMember">
+	<![CDATA[
+	UPDATE member SET memPassword=#{memPassword} 
+	WHERE memId=#{memId} 
+	]]>
+	</update>
+	
+	<!-- 회원 탈퇴 -->
+	<delete id="deleteMember">
+	<![CDATA[
+	DELETE FROM member
+	WHERE memId=#{memId} AND memPassword=#{memPassword}
+	]]>
+	</delete>
+	
+	<!-- 비밀번호 체크 -->
+	<select id="pwdCk" resultType="int">
+	<![CDATA[
+	SELECT COUNT(*) FROM member 
+	WHERE memId=#{memId} AND memPassword=#{memPassword}
+	]]>
+	</select>
+</mapper>

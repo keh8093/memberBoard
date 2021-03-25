@@ -1,0 +1,388 @@
+body{
+
+    width: 1500px;
+    height: 100%;
+}
+
+span{
+
+   
+    font-size: 18px;
+    color: gray;
+    font-weight: bold;
+    margin-right: 20px;
+ 
+    
+    
+    }
+    .inputSubject{
+    
+    display: inline-block;
+    width: 820px;
+    height: 40px;
+    border-radius: 5px;
+    
+    }
+    
+    .inputContent{
+    
+        display: inline-block;
+    width: 820px;
+    height: 100px;
+    border-radius: 5px;
+    resize: none;
+    vertical-align: middle;
+    
+    }
+    .inputDate{
+    
+    width: 140px;
+    height: 40px;
+    border-radius: 5px;
+    
+    
+    }
+    .inputType{
+
+    width: 140px;
+    height: 40px;
+    font-size: 14px;
+    font-weight: bold;
+
+
+    }
+    .inputType>option{
+
+
+        font-size: 14px;
+        font-weight: bold;
+    
+    
+        }
+    .today{
+    
+    width: 120px;
+    height: 40px;
+    border-radius: 5px;
+    display: inline-block;
+    
+    }
+div.subForm{
+
+width: 1200px;
+height: 100%;
+margin: 0px auto;
+padding: 50px;
+
+
+}
+div.subForm>p{
+
+padding-left: 30px;
+padding-bottom: 30px;
+
+
+}
+div#mainForm{
+
+    width: 1200px;
+    height: 100%;
+    margin: 0px auto;
+    padding: 50px;
+    
+    
+    }
+div#mainForm>p{
+
+margin-left: 30px;
+margin-bottom: 30px;
+
+}
+div#mainForm>p:last-of-type>span:nth-of-type(n+2){
+
+margin-left: 20px;
+
+}
+div#mainForm>p:last-of-type>span:last-of-type{
+
+    margin-left: 0px;
+    
+    }
+div.line{
+
+width: 1200px;
+height: 2px;
+background-color: gray;
+margin: 0px auto;
+
+}
+
+#notCheck{
+
+    width: 18px;
+    height: 18px;
+    color: black;
+    vertical-align: middle;
+    
+
+}
+.itemNeed{
+
+
+    width: 18px;
+    height: 18px;
+    color: black;
+    vertical-align: middle;
+
+}
+.itemReply-1{
+
+    display: inline-block;
+    width: 280px;
+    height: 40px;
+    border-radius: 5px;
+    vertical-align: middle;
+    resize: none;
+
+}
+
+
+.itemReply-2{
+
+    display: inline-block;
+    width: 280px;
+    height: 200px;
+    border-radius: 5px;
+    vertical-align: middle;
+    resize: none;
+
+}
+
+input.itemReply-3,input.itemReply-4{
+
+    display: inline-block;
+    width: 560px;
+    height: 40px;
+    border-radius: 5px;
+    vertical-align: middle;
+    resize: none;
+    margin-bottom: 20px;
+    
+  
+
+}
+
+span.itemReply-3{
+
+    display: inline-block;
+    vertical-align: top;
+    
+}
+span.itemReply-4{
+
+    display: inline-block;
+    vertical-align: top;
+    
+}
+span.itemReply-3>button{
+
+
+    margin-bottom: 20px;
+    
+    
+}
+
+span.selectPlusBtn{
+
+    display: inline-block;
+    width: 80px;
+    height: 30px;
+    color: black;
+    background-color: gray;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 30px;
+    text-shadow: 1px 1px white;
+    cursor: pointer;
+    
+    border-radius: 10px;
+    
+}
+
+span.selectDeleteBtn{
+
+    display: inline-block;
+    width: 80px;
+    height: 30px;
+    color: black;
+    background-color: gray;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 30px;
+    text-shadow: 1px 1px white;
+    cursor: pointer;
+    
+    border-radius: 10px;
+    
+}
+.item{
+
+    width: 80px;
+    height: 30px;
+    border-radius: 5px;
+    margin-right: 20px;
+
+}
+.formDelete{
+float: right;
+background-color: gray;
+width: 50px;
+height: 50px;
+color: white;
+border-radius: 10px;
+text-align: center;
+line-height: 50px;
+cursor: pointer;
+box-shadow: black 3px 3px;
+
+}
+.formInsert{
+
+    float: right;
+    background-color: gray;
+    width: 50px;
+    height: 50px;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+    box-shadow: black 3px 3px;
+    
+    }
+
+    .selectForm{
+
+        -ms-user-select: none; 
+        -moz-user-select: -moz-none;
+        -khtml-user-select: none;
+        -webkit-user-select: none;
+        user-select: none;
+    font-size: 30px;
+    position: relative;
+    bottom: 55px;
+    left: -20px;
+    cursor: pointer;
+
+    }
+
+    .on{
+        
+        color: red;
+        text-shadow: black 2px 2px;
+
+    }
+
+    div#special{
+
+        position: fixed;
+        border: 2px solid black;
+        left: 95%;
+        background-color: white;
+        margin-top: 50px;
+        margin-left: -50px;
+        padding: 0px;
+
+    }
+
+    div#special>span{
+
+        -ms-user-select: none; 
+        -moz-user-select: -moz-none;
+        -khtml-user-select: none;
+        -webkit-user-select: none;
+        user-select: none;
+        display: block;
+        color: black;
+        text-align: center;
+        cursor: pointer;
+     
+    }
+
+    span#pageUp,span#pageDown{
+
+        font-size: 40px;
+        margin: 20px;
+        padding: 0px;
+
+
+    }
+
+    span#insertForm,span#deleteForm{
+
+
+        width: 80px;
+        height: 80px;
+        line-height: 80px;
+        font-size: 30px;
+        background-color: gray;
+        border-radius: 100%;
+        box-shadow: 3px 3px black;
+        margin: 20px;
+        padding: 0px;
+
+    
+
+    }
+
+    span.alert{
+
+        display: none;
+        color: red;
+        font-weight: bold;
+        font-size: 18px;
+        margin-bottom: 40px;
+          
+    }
+
+    div#submit{
+
+        width: 1200px;
+        height: 400px;
+        margin: 0px auto;
+        padding: 50px;
+        text-align: center;
+
+    }
+
+    div#submit>span{
+
+
+        display: inline-block;
+        width: 150px;
+        height: 60px;
+        background-color: gray;
+        color: white;
+        vertical-align: middle;
+        line-height: 50px;
+        border-radius: 10px;
+        font-weight: bold;
+        font-size: 25px;
+        cursor: pointer;
+        box-shadow: black 3px 3px;
+        
+
+    }
+    div#submit>span:nth-of-type(1){
+
+        margin-right: 100px;
+
+    }
+    div#submit>span:nth-of-type(2){
+
+        margin-left: 100px;
+        
+    }
+    

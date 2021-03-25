@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="fm">
+  
+	<!-- 폼만들기 -->
+	<insert id="insertForm" parameterType="form">
+	<![CDATA[
+		INSERT INTO form (formCode, formAddress, memCode, formSubject, formContent, formState, formDate, itemNeed, itemSubject, itemContent, itemType, itemReply, itemMin, itemMax)
+		VALUES (NULL, #{formAddress}, #{memCode}, #{formSubject}, #{formContent}, #{formState}, #{formDate}, #{itemNeed}, #{itemSubject}, #{itemContent}, #{itemType}, #{itemReply}, #{itemMin}, #{itemMax});
+    ]]>
+    </insert>
+
+	<!-- 폼 미리보기 -->
+	<select id="view" resultType="form" parameterType="int">
+	<![CDATA[
+	SELECT * FROM form WHERE formCode=#{formCode}
+	]]>
+	</select>
+	
+	<!-- 폼목록조회 -->
+	<select id="formList" resultType="form">
+	<![CDATA[
+	SELECT 
+	FROM form ORDER BY formSubject=#{formSubject}, formContent=#{formContent}, formState=#{formState}, formDate=#{formDate},itemNeed=#{itemNeed}, itemSubject=#{itemSubject}, itemContent=#{itemContent}, itemType=#{itemType}, itemReply=#{itemReply}, itemMin=#{itemMin}, itemMax=#{itemMin}
+	WHERE formCode={#formCode} 
+	]]>
+	</select>
+	
+	<!-- 폼수정 -->
+	<update id="updateForm" parameterType="form">
+	<![CDATA[
+	UPDATE form SET 
+	]]>
+	</update>
+	
+	<!-- 폼삭제 -->
+	<delete id="deleteForm" parameterType="int">
+	<![CDATA[
+	DELETE form WHERE formCode=#{formCode}
+	]]>
+	</delete>
+	
+	<!-- 폼응답보기 -->
+	
+	
+	<!-- 폼응답하기 -->
+</mapper>
